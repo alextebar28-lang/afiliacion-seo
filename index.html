@@ -152,12 +152,10 @@
   <div class="wrap">
     <h2>Contacta con nosotros</h2>
     <p class="lead">Cuéntanos tu proyecto y te responderemos en 24–48 h.</p>
-    <!-- Cambia action por tu endpoint (p. ej. Formspree: https://formspree.io/f/TU_ID) -->
-    <form action="https://formspree.io/f/TU_ID" method="POST">
+    <form onsubmit="return false">
       <label>Nombre <input type="text" name="nombre" autocomplete="name" required></label>
       <label>Email <input type="email" name="email" autocomplete="email" required></label>
       <label>Mensaje <textarea name="mensaje" required></textarea></label>
-      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button class="cta" type="submit">Enviar mensaje</button>
     </form>
   </div>
